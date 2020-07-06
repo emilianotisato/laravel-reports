@@ -1,12 +1,12 @@
 <?php
 
-namespace Spatie\Skeleton\Commands;
+namespace Emilianotisato\LaravelReport\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelReportCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-reports';
 
     public $description = 'My command';
 

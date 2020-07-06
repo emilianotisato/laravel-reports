@@ -1,17 +1,17 @@
 {
-    "name": "spatie/:package_name",
-    "description": ":package_description",
+    "name": "spatie/laravel-reports",
+    "description": "Powerful reporting system (graphs, bars, tables) as a wrapper around the amazing koolreport.com package. The API could not be simpler.",
     "keywords": [
         "spatie",
-        ":package_name"
+        "laravel-reports"
     ],
-    "homepage": "https://github.com/spatie/:package_name",
+    "homepage": "https://github.com/spatie/laravel-reports",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": "https://spatie.be",
+            "name": "Emiliano Tisato",
+            "email": "emilianotisato@gmail.com",
+            "homepage": "https://thormaweb.com",
             "role": "Developer"
         }
     ],
@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src"
+            "Emilianotisato\\LaravelReport\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Emilianotisato\\LaravelReport\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -47,10 +47,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "Emilianotisato\\LaravelReport\\LaravelReportServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "LaravelReport": "Emilianotisato\\LaravelReport\\LaravelReportFacade"
             }
         }
     },
