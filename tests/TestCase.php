@@ -2,8 +2,8 @@
 
 namespace Emilianotisato\LaravelReport\Tests;
 
-use Orchestra\Testbench\TestCase as Orchestra;
 use Emilianotisato\LaravelReport\LaravelReportServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
