@@ -2,9 +2,9 @@
 
 namespace Emilianotisato\LaravelReport;
 
+use Emilianotisato\LaravelReport\Commands\LaravelReportCommand;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
-use Emilianotisato\LaravelReport\Commands\LaravelReportCommand;
 use koolreport\widgets\koolphp\Table;
 
 class LaravelReportServiceProvider extends ServiceProvider
@@ -44,7 +44,8 @@ class LaravelReportServiceProvider extends ServiceProvider
     protected function registerBladeDirectives()
     {
         Blade::directive('reportTable', function ($options) {
-            dd(json_decode( $options));
+            dd(json_decode($options));
+
             return Table::create($options);
         });
     }

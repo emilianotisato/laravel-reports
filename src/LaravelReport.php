@@ -11,6 +11,7 @@ class LaravelReport
         switch ($component) {
             case 'table':
                 return new Table;
+
                 break;
 
             default:
@@ -18,6 +19,5 @@ class LaravelReport
 
                 break;
         }
-
     }
 }
