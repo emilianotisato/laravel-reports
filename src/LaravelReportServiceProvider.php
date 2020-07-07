@@ -2,8 +2,8 @@
 
 namespace Emilianotisato\LaravelReport;
 
-use Illuminate\Support\ServiceProvider;
 use Emilianotisato\LaravelReport\Commands\LaravelReportCommand;
+use Illuminate\Support\ServiceProvider;
 
 class LaravelReportServiceProvider extends ServiceProvider
 {
