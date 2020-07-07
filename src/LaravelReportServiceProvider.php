@@ -2,10 +2,8 @@
 
 namespace Emilianotisato\LaravelReport;
 
-use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Emilianotisato\LaravelReport\Commands\LaravelReportCommand;
-use koolreport\widgets\koolphp\Table;
 
 class LaravelReportServiceProvider extends ServiceProvider
 {
@@ -31,26 +29,11 @@ class LaravelReportServiceProvider extends ServiceProvider
             ]);
         }
 
-        $this->registerBladeDirectives();
-
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'laravel-reports');
     }
 
     public function register()
     {
         $this->mergeConfigFrom(__DIR__.'/../config/laravel-reports.php', 'laravel-reports');
-    }
-
-    protected function registerBladeDirectives()
-    {
-        Blade::directive('reportTable', function ($options) {
-            dd(json_decode( $options));
-            return Table::create($options);
-        });
-    }
-
-    public function render()
-    {
-        return "<h1>Canon!</h1>";
     }
 }
