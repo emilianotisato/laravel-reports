@@ -1,11 +1,11 @@
 {
-    "name": "spatie/laravel-reports",
+    "name": "emilianotisato/laravel-reports",
     "description": "Powerful reporting system (graphs, bars, tables) as a wrapper around the amazing koolreport.com package. The API could not be simpler.",
     "keywords": [
         "spatie",
         "laravel-reports"
     ],
-    "homepage": "https://github.com/spatie/laravel-reports",
+    "homepage": "https://github.com/emilianotisato/laravel-reports",
     "license": "MIT",
     "authors": [
         {
@@ -16,12 +16,13 @@
         }
     ],
     "require": {
-        "php": "^7.3",
-        "laravel/framework": "^6.0|^7.0"
+        "php": "^7.1",
+        "laravel/framework": "~5.8|^6.0|^7.0",
+        "koolreport/core": "^4.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.16",
-        "orchestra/testbench": "^4.0,^5.0",
+        "orchestra/testbench": "~3.8|^4.0|^5.0",
         "phpunit/phpunit": "^9.0",
         "psalm/plugin-laravel": "^1.2",
         "vimeo/psalm": "^3.11"
